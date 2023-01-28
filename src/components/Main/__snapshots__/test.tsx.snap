@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Main /> Precisa estar entre as tags <h1> a <h6> 1`] = `
+<main>
+  <h1>
+    Me Joga
+  </h1>
+</main>
+`
