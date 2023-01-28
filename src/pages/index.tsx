@@ -1,9 +1,12 @@
-type Props = {
-  title: string
-}
+import Head from 'next/head'
 
-function Home({ title = 'Me Joga' }: Props) {
-  return <div>{title} | Home</div>
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>Me Joga | Home</title>
+      </Head>
+      <div>Me Joga | Home</div>
+    </>
+  )
 }
-
-export default Home
