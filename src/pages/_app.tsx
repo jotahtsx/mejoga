@@ -1,4 +1,4 @@
-import Header from 'components/Header'
+import { Header } from 'components/Header/Header'
 import type { AppProps } from 'next/app'
 import { GlobalStyle } from 'styles/global'
 
