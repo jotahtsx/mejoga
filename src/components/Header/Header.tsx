@@ -21,7 +21,16 @@ export const Header = () => (
           <img src="./images/search.svg" />
         </button>
       </form>
-      <div>links úteis</div>
+      <div className="links">
+        <Link className="link" href="">
+          <img src="./images/info.svg" />
+          <span>Sobre</span>
+        </Link>
+        <Link className="link" href="">
+          <img src="./images/catalog.svg" />
+          <span>Catálogo</span>
+        </Link>
+      </div>
       <div className="actions">
         <a>aa</a>
         <a>aa</a>

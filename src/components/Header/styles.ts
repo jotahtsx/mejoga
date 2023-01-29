@@ -40,10 +40,33 @@ export const Wrapper = styled.header`
         background-color: transparent;
       }
     }
+
+    .links {
+      display: flex;
+      align-items: center;
+      grid-column-gap: 1.25rem;
+      color: var(--grey-200);
+      .link {
+        display: flex;
+        grid-column-gap: 0.625rem;
+      }
+    }
+
     .actions {
       display: flex;
+      align-items: center;
       justify-content: flex-end;
       grid-column-gap: 0.625rem;
+      a {
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--grey-200);
+        border-radius: 0.313rem;
+      }
     }
   }
 `
