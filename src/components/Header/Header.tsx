@@ -39,7 +39,10 @@ export const Header = () => (
           <img src="./images/cart.svg" />
         </Link>
         <Link className="profile" href="">
-          <img src="./images/profile.png" />
+          <div
+            style={{ backgroundImage: `url(./images/profile.png)` }}
+            className="profileImage"
+          ></div>
         </Link>
       </div>
     </div>

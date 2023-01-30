@@ -68,17 +68,13 @@ export const Wrapper = styled.header`
       }
       .profile {
         border: none;
-        img {
+        .profileImage {
           height: 2.5rem;
           width: 2.5rem;
-          background: linear-gradient(
-              to top,
-              rgba(21, 28, 55, 0.5),
-              rgba(255, 255, 255, 0.28)
-            )
-            border-box;
+          background-size: cover;
+          background-position: center;
           border-radius: 0.5rem;
-          border: 0.188rem solid transparent;
+          border: 0.188rem solid rgba(255, 255, 255, 0.1);
         }
       }
     }
