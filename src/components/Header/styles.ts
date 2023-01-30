@@ -59,13 +59,27 @@ export const Wrapper = styled.header`
       grid-column-gap: 0.625rem;
       a {
         display: flex;
-        display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
-        border: 1px solid var(--grey-200);
-        border-radius: 0.313rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: 0.063rem solid var(--grey-200);
+        border-radius: 0.5rem;
+      }
+      .profile {
+        border: none;
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+          background: linear-gradient(
+              to top,
+              rgba(21, 28, 55, 0.5),
+              rgba(255, 255, 255, 0.28)
+            )
+            border-box;
+          border-radius: 0.5rem;
+          border: 0.188rem solid transparent;
+        }
       }
     }
   }

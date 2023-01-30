@@ -32,9 +32,15 @@ export const Header = () => (
         </Link>
       </div>
       <div className="actions">
-        <a>aa</a>
-        <a>aa</a>
-        <a>aa</a>
+        <Link href="">
+          <img src="./images/notification.svg" />
+        </Link>
+        <Link href="">
+          <img src="./images/cart.svg" />
+        </Link>
+        <Link className="profile" href="">
+          <img src="./images/profile.png" />
+        </Link>
       </div>
     </div>
   </H.Wrapper>
