@@ -33,9 +33,11 @@ export const Header = () => (
       </div>
       <div className="actions">
         <Link href="">
+          <span className="notification"></span>
           <img src="./images/notification.svg" />
         </Link>
         <Link href="">
+          <span className="notification"></span>
           <img src="./images/cart.svg" />
         </Link>
         <Link className="profile" href="">

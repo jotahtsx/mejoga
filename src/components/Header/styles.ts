@@ -58,6 +58,7 @@ export const Wrapper = styled.header`
       justify-content: flex-end;
       grid-column-gap: 0.625rem;
       a {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -65,6 +66,15 @@ export const Wrapper = styled.header`
         width: 2.5rem;
         border: 0.063rem solid var(--grey-200);
         border-radius: 0.5rem;
+      }
+      .notification {
+        position: absolute;
+        top: 0.625rem;
+        right: 0.5rem;
+        height: 0.625rem;
+        width: 0.625rem;
+        border-radius: 0.5rem;
+        background-color: var(--primary);
       }
       .profile {
         border: none;
