@@ -87,7 +87,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: 74rem;
+    max-width: 70rem;
     margin: 0 auto;
     span {
       width: auto;

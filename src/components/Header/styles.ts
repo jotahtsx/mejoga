@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.header`
+  position: sticky;
+  top: 0px;
+  z-index: 3;
   width: 100%;
   height: 5rem;
   background-color: var(--grey-400);
@@ -10,7 +13,7 @@ export const Wrapper = styled.header`
     grid-template-columns: 1fr 23.688rem 17.375rem 1fr;
     grid-column-gap: 1.25rem;
     height: 100%;
-    max-width: 74rem;
+    max-width: 70rem;
     margin: 0 auto;
     .search {
       position: relative;
