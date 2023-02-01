@@ -1,5 +1,31 @@
 import styled from 'styled-components'
 
+export const Slider = styled.div`
+  width: 100%;
+  .swiper-pagination-fraction {
+    color: var(--white);
+    font-weight: 600;
+  }
+  .swiper-pagination-fraction:before,
+  .swiper-pagination-fraction:after {
+    content: '';
+    display: inline-block;
+    width: 50%;
+    margin: 0 0.5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .swiper-pagination-fraction:after {
+    margin: 0 -55% 0 0.5em;
+  }
+  .swiper-pagination-current {
+    font-size: 1.5rem;
+  }
+  .swiper-pagination-total {
+    font-size: 1.875rem;
+  }
+`
+
 export const Wrapper = styled.div`
   width: 100%;
   height: 37.5rem;
