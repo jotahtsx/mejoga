@@ -2,6 +2,45 @@ import styled from 'styled-components'
 
 export const Slider = styled.div`
   width: 100%;
+
+  .swiper-button-disabled {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.125rem;
+    color: var(--grey-100);
+    background-color: transparent;
+  }
+  .swiper-button-prev {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.125rem;
+    color: var(--grey-100);
+    background-color: var(--grey-300);
+    background-image: url(./images/prev.svg);
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+    background-position: center;
+    &::after {
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    height: 3.125rem;
+    width: 3.125rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.125rem;
+    color: var(--grey-100);
+    background-color: var(--grey-300);
+    background-image: url(./images/next.svg);
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+    background-position: center;
+    &::after {
+      display: none;
+    }
+  }
   .swiper-pagination-fraction {
     color: var(--white);
     font-weight: 600;
