@@ -52,6 +52,11 @@ export const Wrapper = styled.div`
     button {
       height: 3.125rem;
       width: 10.625rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: 1px 1px rgb(0 0 0 / 50%);
+      color: var(--white);
       background-color: var(--primary);
       border: none;
       border-radius: 0.25rem;
