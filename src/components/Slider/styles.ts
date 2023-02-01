@@ -5,7 +5,20 @@ export const Wrapper = styled.div`
   height: 37.5rem;
   background-size: cover;
   background-repeat: none;
+  .pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 40%);
+  }
   .container {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     height: 100%;
@@ -29,11 +42,19 @@ export const Wrapper = styled.div`
       color: var(--white);
     }
     p {
-      font-size: 0.875rem;
+      font-size: 1rem;
       font-weight: 500;
-      line-height: 1.5rem;
+      line-height: 2rem;
       text-shadow: 1px 1px rgb(0 0 0 / 50%);
+      margin-bottom: 2.5rem;
       color: var(--white);
+    }
+    button {
+      height: 3.125rem;
+      width: 10.625rem;
+      background-color: var(--primary);
+      border: none;
+      border-radius: 0.25rem;
     }
   }
 `
