@@ -13,7 +13,7 @@ export const Slider = styled.div`
     width: 50%;
     margin: 0 0.5em 0 -55%;
     vertical-align: middle;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
   .swiper-pagination-fraction:after {
     margin: 0 -55% 0 0.5em;
@@ -28,7 +28,7 @@ export const Slider = styled.div`
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 37.5rem;
+  height: 35rem;
   background-size: cover;
   background-repeat: none;
   .pattern {
