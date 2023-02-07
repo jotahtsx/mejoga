@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.header`
-  position: sticky;
+  /* position: sticky;
   top: 0px;
-  z-index: 3;
+  z-index: 3; */
   width: 100%;
   height: 5rem;
   background-color: var(--grey-400);
