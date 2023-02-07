@@ -33,7 +33,7 @@ export const Slider = () => (
                   <br /> inesquecíveis em The Last of Us™, vencedor de mais
                   <br /> de 200 prêmios de Jogo do Ano.
                 </p>
-                <button>Compre Agora</button>
+                <button>Comprar Agora</button>
               </div>
             </div>
           </S.Wrapper>
@@ -53,7 +53,7 @@ export const Slider = () => (
                   <br /> pela crítica e o jogo mais bem avaliado desta geração
                   <br /> de consoles, agora chega aprimorado para PC
                 </p>
-                <button>Compre Agora</button>
+                <button>Comprar Agora</button>
               </div>
             </div>
           </S.Wrapper>
@@ -73,7 +73,7 @@ export const Slider = () => (
                   <br /> da aclamada franquia de FPS desenvolvida pelo
                   <br /> renomado estúdio Ubisoft Montreal.
                 </p>
-                <button>Compre Agora</button>
+                <button>Comprar Agora</button>
               </div>
             </div>
           </S.Wrapper>

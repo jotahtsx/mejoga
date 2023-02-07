@@ -13,7 +13,7 @@ export const Wrapper = styled.header`
     grid-template-columns: 1fr 23.688rem 17.375rem 1fr;
     grid-column-gap: 1.25rem;
     height: 100%;
-    max-width: 70rem;
+    max-width: 73.75rem;
     margin: 0 auto;
     .search {
       position: relative;

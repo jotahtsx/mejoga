@@ -87,7 +87,7 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    max-width: 70rem;
+    max-width: 73.75rem;
     margin: 0 auto;
     span {
       width: auto;
@@ -115,9 +115,9 @@ export const Wrapper = styled.div`
       color: var(--white);
     }
     button {
-      height: 3.125rem;
-      width: 10.625rem;
-      font-size: 0.875rem;
+      height: 3.155rem;
+      width: 12.975rem;
+      font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       text-shadow: 1px 1px rgb(0 0 0 / 50%);
