@@ -13,10 +13,10 @@ const eslintConfig = [
   ...compat.config({
     extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
     rules: {
-      'semi': ['error', 'never'],
-      'quotes': ['error', 'single'],
+      semi: ['error', 'never'],
+      quotes: ['error', 'single'],
       'prefer-arrow-callback': ['error'],
-      'prefer-template': ['error']
+      'prefer-template': ['error'],
     },
   }),
 ]
