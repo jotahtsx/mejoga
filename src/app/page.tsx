@@ -19,7 +19,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Olá</li>
+          <li>Olá, mundo</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
