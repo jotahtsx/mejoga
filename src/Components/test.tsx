@@ -9,7 +9,7 @@ describe('<Main />', () => {
     const { container } = render(<Main />)
 
     // busca o elemento e verifica a existência dele
-    expect(screen.getByRole('heading', { name: /mejoga/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /mejogaaa/i })).toBeInTheDocument()
 
     // gerar snapshot
     expect(container.firstChild).toMatchSnapshot()
