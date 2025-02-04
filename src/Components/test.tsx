@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 import Main from '.'
 
 describe('<Main />', () => {
-  it('should render the heading', () => {
+  it('Precisa renderizar o header', () => {
     // renderiza o component
     const { container } = render(<Main />)
 
