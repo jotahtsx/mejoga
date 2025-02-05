@@ -3,14 +3,19 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/app/**', '!src/lib/registry.tsx'],
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/app/**',
+    '!src/lib/registry.tsx',
+    '!src/types/**',
+    '!src/styles/**',
+  ],
   modulePaths: ['<rootDir>/src/'],
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest', // Usar Babel para transformar arquivos
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   moduleNameMapper: {
-    '^styled-components':
-      '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js',
+    '^styled-components': 'styled-components/dist/styled-components.browser.cjs.js',
   },
 }
