@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`<Main /> Precisa renderizar o header 1`] = `
-<main>
-  <h1>
-    MeJoga
-  </h1>
-</main>
-`;
