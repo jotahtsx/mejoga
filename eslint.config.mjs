@@ -17,7 +17,8 @@ const eslintConfig = [
       quotes: ['error', 'single'],
       'prefer-arrow-callback': ['error'],
       'prefer-template': ['error'],
-      'react/react-in-jsx-scope': 'off'
+      'react/react-in-jsx-scope': 'off',
+      'react/no-unescaped-entities': 'off',
     },
   }),
 ]

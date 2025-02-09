@@ -13,15 +13,13 @@ const GlobalStyles = createGlobalStyle`
         font-size: 62.5%;
     }
 
-    html, body{
-        background-color: #06092b;
-        color: #fff;
-        width: 100%;
+    html, body, #_next{
         height: 100%;
-        padding: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}`
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+`
 
 export default GlobalStyles
