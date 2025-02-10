@@ -3,18 +3,22 @@
 exports[`<Main /> Precisa renderizar o header corretamente e gerar o snapshot 1`] = `
 .c0 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   background-color: #06092b;
 }
 
-<main
+<div
   class="c0"
 >
   <h1>
     Me Joga
   </h1>
-</main>
+  <p>
+    Sua próxima aventura começa aqui!
+  </p>
+   
+</div>
 `;

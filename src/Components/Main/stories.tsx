@@ -1,17 +1,12 @@
-import React from 'react'
-import { Meta, StoryFn } from '@storybook/react'
-import Main from './index'
+import { Meta, StoryObj } from '@storybook/react'
+import Main from './'
 
-const meta: Meta<typeof Main> = {
+export default {
   title: 'Main',
   component: Main,
-}
+  parameters: {
+    layout: 'fullscreen',
+  },
+} as Meta
 
-export default meta
-
-const Template: StoryFn<typeof Main> = (args) => <Main {...args} />
-
-export const Default = Template.bind({})
-Default.args = {
-  title: 'Título do Storybook', // Aqui estamos passando a prop title
-}
+export const Default: StoryObj = {}
