@@ -5,13 +5,13 @@ import Main from './index'
 const meta: Meta<typeof Main> = {
   title: 'Main',
   component: Main,
-  parameters: {
-    layout: 'fullscreen',
-  },
 }
 
 export default meta
 
-const Template: StoryFn<typeof Main> = () => <Main />
+const Template: StoryFn<typeof Main> = (args) => <Main {...args} />
 
 export const Default = Template.bind({})
+Default.args = {
+  title: 'Título do Storybook', // Aqui estamos passando a prop title
+}

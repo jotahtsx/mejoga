@@ -1,9 +1,15 @@
+'use client'
+
 import { Wrapper } from './styles'
 
-const Main = () => {
+type MainProps = {
+  title: string
+}
+
+const Main = ({ title }: MainProps) => {
   return (
     <Wrapper>
-      <h1>Me Joga</h1>
+      <h1>{title}</h1>
     </Wrapper>
   )
 }
