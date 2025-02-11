@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mejoga
 
-## Getting Started
+Mejoga é uma plataforma de jogos que visa proporcionar uma experiência interativa e imersiva para os usuários. O projeto está sendo desenvolvido com **Next.js**, **ESLint**, **Prettier**, **Jest** e outras ferramentas modernas para garantir qualidade e performance.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js** - Framework para aplicações React.
+- **ESLint & Prettier** - Padronização e formatação do código.
+- **Jest & Testing Library** - Testes unitários e de componentes.
+- **Styled Components** - Estilização baseada em componentes.
+- **Lint Staged & Husky** - Prevenção de commits com erros.
+- **GitHub Actions** - Integração Contínua (CI/CD).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/mejoga.git
+   cd mejoga
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts Disponíveis
 
-## Learn More
+- **`npm run dev`** - Inicia o servidor em ambiente de desenvolvimento.
+- **`npm run lint`** - Executa o ESLint para analisar o código.
+- **`npm run test`** - Roda os testes automatizados.
+- **`npm run build`** - Gera a build para produção.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribuição
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Se deseja contribuir para o projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Crie um fork do repositório.
+2. Crie uma branch para sua feature/bugfix:
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas mudanças:
+   ```bash
+   git commit -m "Descrição da mudança"
+   ```
+4. Envie suas mudanças:
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request.
 
-## Deploy on Vercel
+## Integração Contínua (CI)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto usa **GitHub Actions** para automatizar testes e linting antes de mesclar as modificações. O pipeline está configurado para rodar nos pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contato
+
+Caso tenha alguma dúvida ou sugestão, entre em contato através do e-mail \**joaomanoelskai@gmail.com* ou abra uma issue no repositório.
+
+---
+
+_Desenvolvido com ❤️ por [João Manoel]_
