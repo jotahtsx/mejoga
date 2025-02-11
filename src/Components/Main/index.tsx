@@ -14,7 +14,7 @@ const Main = ({
   return (
     <Wrapper>
       <h1>{title}</h1>
-      <p>{description}</p> {/* Nova prop sendo exibida */}
+      <p>{description}</p>
     </Wrapper>
   )
 }

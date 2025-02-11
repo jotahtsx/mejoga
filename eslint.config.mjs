@@ -12,6 +12,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.config({
     extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
+    ignorePatterns: ['**/node_modules/**', '**/dist/**', '**/*.test.js'], // Defina os arquivos/padrões a serem ignorados
     rules: {
       semi: ['error', 'never'],
       quotes: ['error', 'single'],

@@ -19,6 +19,5 @@ exports[`<Main /> Precisa renderizar o header corretamente e gerar o snapshot 1`
   <p>
     Sua próxima aventura começa aqui!
   </p>
-   
 </div>
 `;
