@@ -19,7 +19,8 @@ export default {
       }
     },
     menu: {
-      logo: Logo
+      logo: Logo,
+      expanded: true
     },
     theme: {
       light: {},
@@ -48,9 +49,10 @@ export default {
           secondary600: "#8AB4F8",
         }
       }
-    }
+    },
+    tutorials: false,
+    notifications: { releases: false },
   },
-  tutorials: false,
   bootstrap() {
   },
 };
