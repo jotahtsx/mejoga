@@ -3,7 +3,7 @@ export default {
         {
             method: "POST",
             path: "/jogos/carregar",
-            handler: "game.carregar"
+            handler: "game.populate"
         }
     ]
 }
