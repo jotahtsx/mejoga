@@ -8,23 +8,16 @@
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "start": "strapi start",
-    "strapi": "strapi",
-    "postinstall": "patch-package"
+    "strapi": "strapi"
   },
   "dependencies": {
-    "@_sh/strapi-plugin-ckeditor": "^5.0.1",
-    "@strapi/plugin-cloud": "5.9.0",
-    "@strapi/plugin-graphql": "^5.10.0",
-    "@strapi/plugin-users-permissions": "5.9.0",
-    "@strapi/strapi": "5.9.0",
-    "better-sqlite3": "11.3.0",
-    "jsdom": "^26.0.0",
-    "patch-package": "^8.0.0",
-    "postinstall-postinstall": "^2.1.0",
+    "@strapi/plugin-cloud": "5.10.3",
+    "@strapi/plugin-users-permissions": "5.10.3",
+    "@strapi/strapi": "5.10.3",
+    "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
-    "slugify": "^1.6.6",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
@@ -38,6 +31,6 @@
     "npm": ">=6.0.0"
   },
   "strapi": {
-    "uuid": "53907cec-d7cb-46c3-aa3d-72ca7375545a"
+    "uuid": "b2c28d36-d8e9-48c0-ae9a-e1a8ec58a203"
   }
 }
