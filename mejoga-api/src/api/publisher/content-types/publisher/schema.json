@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "publishers",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "category"
+    "singularName": "publisher",
+    "pluralName": "publishers",
+    "displayName": "publisher"
   },
   "options": {
     "draftAndPublish": false
@@ -12,8 +12,7 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "slug": {
       "type": "uid",
@@ -21,9 +20,9 @@
     },
     "games": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::game.game",
-      "mappedBy": "categories"
+      "mappedBy": "publisher"
     }
   }
 }
