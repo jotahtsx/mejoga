@@ -5,14 +5,19 @@
 import { factories } from '@strapi/strapi'
 
 export default factories.createCoreController(
-    "api::game.game",
-    ({strapi}) => ({
+    'api::game.game',
+    ({ strapi }) => ({
         async populate(ctx) {
-            console.log('RODANDO NO SERVIDOR')
 
-            await strapi.service('api::game.game').populate(ctx.query)
+            const options = {
+                limit: 48,
+                order: 'desc:trending',
+                ...ctx.query,
+            };
 
-            ctx.send('FINALIZANDO CLIENT')
+            await strapi.service('api::game.game').populate(options)
+
+            ctx.send('Finalizando a seed de jogos!')
         }
     })
 )
