@@ -40,7 +40,7 @@ async function getByName(name, entityService) {
 }
 
 async function create(name, entityService) {
-    const item = await strapi.service(entityService)
+    const item = await getByName(name, entityService)
 
     if (!item) {
         await strapi.service(entityService).create({
@@ -60,22 +60,16 @@ export default factories.createCoreService('api::game.game', () => ({
             data: { products },
         } = await axios.get(gogApiUrl)
 
-        // products[0].developers.map(async (developer) => {
-        //     await strapi.service('api::developer.developer').create({
-        //         data: {
-        //             name: developer,
-        //             slug: slugify(developer, { strict: true, lower: true })
-        //         }
-        //     })
-        // })
+        products[3].developers.map(async (developer) => {
+            await create(developer, "api::developer.developer")
+        })
 
-        products[1].publishers.map(async (publisher) => {
-            await strapi.service('api::publisher.publisher').create({
-                data: {
-                    name: publisher,
-                    slug: slugify(publisher, { strict: true, lower: true })
-                }
-            })
+        products[4].publishers.map(async (publisher) => {
+            await create(publisher, "api::publisher.publisher")
+        })
+
+        products[3].genres.map(async ({name}) => {
+            await create(name, "api::category.category")
         })
     }
 }))
