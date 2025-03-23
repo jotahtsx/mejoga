@@ -1,10 +1,8 @@
-/**
- * game service
- */
 import axios from "axios";
 import { JSDOM } from "jsdom";
 import slugify from "slugify";
 import { factories } from "@strapi/strapi";
+import FormData from "form-data";
 
 const gameService = "api::game.game";
 const publisherService = "api::publisher.publisher";
@@ -20,8 +18,8 @@ async function getGameInfo(slug) {
 
   const raw_description = dom.window.document.querySelector(".description");
 
-  const description = raw_description.innerHTML;
-  const short_description = raw_description.textContent.slice(0, 160);
+  const description = raw_description?.innerHTML || "";
+  const short_description = raw_description?.textContent?.slice(0, 160) || "";
 
   const ratingElement = dom.window.document.querySelector(
     ".age-restrictions__icon use"
@@ -97,6 +95,33 @@ async function createManyToManyData(products) {
   ]);
 }
 
+async function setImage({ image, game, field = "cover" }) {
+  try {
+    const { data } = await axios.get(image, { responseType: "arraybuffer" });
+    const buffer = Buffer.from(data);
+
+    const formData = new FormData();
+
+    formData.append("refId", game.id);
+    formData.append("ref", `${gameService}`);
+    formData.append("field", field);
+    formData.append("files", buffer, `${game.slug}.jpg`);
+
+    console.info(`Uploading ${field} image: ${game.slug}.jpg`);
+
+    await axios({
+      method: "POST",
+      url: `http://localhost:1337/api/upload/`,
+      data: formData,
+      headers: {
+        ...formData.getHeaders(),
+      },
+    });
+  } catch (error) {
+    console.error(`Error uploading image: ${image}`, error);
+  }
+}
+
 async function createGames(products) {
   await Promise.all(
     products.map(async (product) => {
@@ -134,8 +159,25 @@ async function createGames(products) {
           },
         });
 
+        await setImage({ image: product.coverHorizontal, game });
+        if (product.screenshots && product.screenshots.length > 0) {
+          await Promise.all(
+            product.screenshots.slice(0, 5).map((url) =>
+              setImage({
+                image: `${url.replace(
+                  "{formatter}",
+                  "product_card_v2_mobile_slider_639"
+                )}`,
+                game,
+                field: "gallery",
+              })
+            )
+          );
+        }
+
         return game;
       }
+      return item;
     })
   );
 }
@@ -148,10 +190,7 @@ export default factories.createCoreService(gameService, () => ({
       data: { products },
     } = await axios.get(gogApiUrl);
 
-    await createManyToManyData([products[0], products[2]]);
-
-    await createGames([products[0], products[2]]);
-
-    // console.log(await getGameInfo(products[2].slug));
+    await createManyToManyData(products);
+    await createGames(products);
   },
 }));
